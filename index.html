@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vinculos, probando</title>
+    <style>
+    a {text-decoration:none;} /* ningun vinculo subrayado */
+    a:link {color:red;font-size:110%;} /*vinculos sin visitar en verde*/
+    a:visited {color:green;} /*vinculos vosotados en verde*/
+    a:hover {/*background-color:blue;
+        color:white;*/
+    font-weight:bold;}   
+    .arriba {text-align:center;
+    font-size:0.8em;} 
+    
+    </style>
+</head>
+<body>
+    
+    <h1 id="arriba">Te rezamos Tellez</h1>
+    <hr>
+    <h2>examen 2016</h2>
+    <!--vamos a crear una lista sin numeros de vinculos-->
+    <!--todos estos vinculos son locales, dentro de mi propia pagina-->
+    <ul>
+        <li><a href="#apartado1">1. ¿Qué es el servicio DHCP? Explica qué ventajas tiene el uso del servicio DHCP. ¿Qué parámetros ofrece el servicio? ¿Qué tipos de asignación de IP podemos configurar? ¿Qué protocolos utiliza el servicio DHCP? ¿Utiliza con algún protocolo algún Puerto?</a></li>
+        <li><a href="#apartado2">2. Explica y dibuja el funcionamiento del protocolo DHCP. ¿Qué mensajes se intercambian? Distingue entre enviados por el Servidor y por el cliente. ¿Qué es la Autoconfiguración de Red sin DHCP? ¿Es igual en Windows y Linux?</a></li>
+        <li><a href="#apartado3">3. Define los siguientes conceptos relacionados con el servicio DHCP: Ámbito, Intervalo de exclusión, Concesión, Reserva APIPA</a></li>
+        <li><a href="#apartado4">4. ¿Cómo se instala y configura un Servidor DHCP en Linux? Indica los pasos y los ficheros de cualquier tipo que intervienen en la instalación y en la configuración. ¿Es igual en Windows? Si existen, explica las diferencias.</a></li>
+        <li><a href="#apartado5">5. ¿Qué fichero o ficheros están implicados en la configuración del servicio DHCP en un entorno Linux? Indica las sentencias/directivas más significativas y típicas que se utilizan en la configuración del servicio DHCP en GNU/Linux.</a></li>
+        <li><a href="#apartado6">6. ¿Qué ordenes o comandos permiten en Windows y en Linux comprobar/verificar el funcionamiento del servicio DHCP? Descríbelos brevemente y da ejemplos si es necesario. ¿Son los mismos en cada S.O.? Contesta OBLIGATORIAMENTE a esta pregunta (2,5 puntos)</a></li>
+        <li><a href="#apartado7">7. Explica la configuración dada. ¿En qué fichero se encontraría esta configuración en Linux? ¿En qué carpeta? ¿Qué direcciones IP van a concederse? ¿Cómo se llama el dominio de la red? ¿Qué tiempo de cesión va conceder por defecto el servidor DHCP? ¿Hay algún equipo que tenga una IP estática? ¿Hay algún equipo que tenga una IP reservada?</a></li>
+        <li><a href="#apartado8">8. ¿Qué es el servicio DNS? Explica y dibuja el funcionamiento del protocolo DNS. ¿Qué ventajas tiene el uso del servicio DNS? ¿Qué tipos de servidores DNS pueden existir? ¿En qué consiste el cliente DNS?</a></li>
+        <li><a href="#apartado9">9. Explica los conceptos relacionados con el servicio DNS:</a></li>
+        <li><a href="#apartado10">10. Describe los Registros de Recurso más típicos e indica su sintaxis.</a></li>
+        <li><a href="#apartado11">11. ¿Qué fichero o ficheros están implicados en la configuración del servicio DNS en un entorno Linux? Indica las sentencias/directivas más significativas y típicas que se utilizan en la configuración del servicio DNS en GNU/Linux.</a></li>
+        <li><a href="#apartado12">12. ¿Qué ordenes o comandos permiten en Windows y en Linux comprobar/verificar el funcionamiento del servicio DNS? Describe su sintaxis brevemente y da algún ejemplo de uso. ¿Son las mismas ordenes en Linux y Windows?</a></li>
+        <li><a href="#apartado13">13. Explica la configuración dada. Indica en qué fichero colocarías cada bloque</a></li>
+        <h2>examen 2018</h2>
+        <li><a href="#apartado14">1. (1p) Plantea una Red Local con al menos 20 equipos, 5 de ellos tendrá misiones de servidor, el resto serán equipos de usuarios, de los cuales, unos cuantos, serán
+            fijos y el resto estarán o no algunas veces. Dibújala, asígnale una dirección de red,
+            un dominio, direcciones IP,s un nombre a cada equipo, etc dónde creas conveniente
+            e indícalas en el dibujo. Justifica brevemente las decisiones tomadas.
+            Basado TODO es esa Red Local que has diseñado.... responde</a></li>
+        <li><a href="#apartado15">2. (0,5p) Explica qué ventajas tiene el uso del servicio DHCP. ¿Qué configuraría o informaría en tu Red?</a></li>
+        <li><a href="#apartado16">3. (0,5p) Define los siguientes conceptos relacionados con el servicio DHCP: ámbito,
+            intervalo de exclusión, concesión y reserva e indica cómo son en el caso de tu
+            Red.</a></li>
+        <li><a href="#apartado17">4. (1p) Explica y dibuja el funcionamiento del protocolo DHCP entre un equipo de tu
+            Red y el servidor DHCP de tu Red (si es que has decidido que haya). ¿Qué
+            mensajes se intercambian para localizar el servidor? Y una vez asignada una
+            dirección IP¿Qué mensajes se intercambian para liberar esa IP?</a></li>
+        <li><a href="#apartado18">5. (2p) Escribe el contenido que formaría parte del archivo de configuración del
+            servicio DHCP para una Distro GNU/Linux Ubuntu, por ejemplo. Explica brevemente
+            cada directiva o parámetro justificando su papel.</a></li>
+        <li><a href="#apartado19">6. (0,5p) Indica la ruta y nombre del archivo o archivos de configuración de tu servidor
+            DHCP en Linux. ¿Y si fuera un servidor Windows?</a></li>
+        <li><a href="#apartado20">7. (0,5p) Elige un equipo para que sea servidor DNS de tu dominio. Indica qué define el
+            servicio DNS. ¿Qué mecanismo proporcionará tu servicio DNS? ¿Por qué
+            necesitarías este servicio en tu Red?</a></li>
+        <li><a href="#apartado21">8. (1p) Define para tu Red y Servicio DNS los siguientes conceptos: dominio, zona,
+            resolución de nombres y resolución inversa. Indica cuales serían en tu caso
+            concreto.</a></li>
+        <li><a href="#apartado22">9. (0,5p) Indica cuándo un servidor DNS es primario. ¿En qué situación no es
+            necesario un DNS propio? Explica qué es la delegación y cómo afectaría a tu
+            servidor.</a></li>
+        <li><a href="#apartado23">10.(2p) Crea una posible configuración de tu servidor DNS para tu Red Local. Explicar
+            con detalle cada aspecto de la configuración, ficheros, contenidos, estructura,
+            directivas elegidas, motivo de la elección. Qué orden ejecutarías para lanzar el
+            servicio DNS en el servidor GNU/Linux?</a></li>
+        <li><a href="#apartado24">11.(0,5p) ¿Qué Registros de Recursos has usado en tu configuración? ¿Para qué
+            sirven? ¿Hay más que no has usado?</a></li>
+    </ul>
+    <!--esto va a ser un vinculo esterno a google-->
+    <p>para mas informacion,visita <a href="http://www.google.com" target="_blank">google</a></p>
+    <hr>
+    <h2 id="apartado1">Pegunta 1 DHCP</h2>
+    <p>Es el que se encarga de asignar automaticamente una direccion ip, es un protocolo de red, utiliza la capa UDP. Los puertos son 67 y 68.</p>
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <hr>
+    <h2 id="apartado2">Pregunta 2 DHCP</h2>
+    <img src="imagenes/4.png">
+    <p>Primero: el cliente emite un mensaje DHCP DISCOVER por difusión para poder descubrir si existe algún servidor DHCP a la escucha en la subred. En él podría incluir su dirección MAC y el tiempo de concesión requerido.</p>
+    <p>Segundo: los servidores DHCP activos envían un mensaje DHCP OFFER, donde ofrecen una configuración IP al cliente, es decir, una dirección libre.</p>
+    <p>Tercero: el cliente manda por difusión la primera oferta aceptada a todos los servidores DHCP. Esto lo hace a través de un mensaje por difusión</p>
+    <p>DHCP REQUEST que debe incluir el identificador del servidor elegido y la dirección IP ofrecida. Así, se declinan las demás ofertas.</p>
+    <p>Cuarto:el servidor seleccionado indica que se acepta la petición solicitada enviando un mensaje</p>
+    <p>La auto configuracion de red es poner tu a mano la IP estatica.</p>
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <hr>
+    <h2 id="apartado3">Pregunta 3 DHCP</h2>
+    <p>-Ambito: es una agrupación administrativa de direcciones IP para equipos de una subred que usan el servicio DHCP (protocolo de configuración dinámica de host).</p>
+    <p>-Intervalo de exclusión: se entiende la dirección o rango IP que no puede conceder un servidor DHCP.</p>
+    <p>-Concesión: es la asignación de una dirección IP durante un intervalo de tiempo, es decir, se establece una especie de pacto o contrato que determina que el servidor ofrece una IP válida al cliente hasta que venza un determinado plazo de tiempo.</p>
+    <p>-Reserva APIPA: es un mecanismo en el que sólo se asigna la dirección IP y nada más, permitiendo de esta manera que los equipos del mismo segmento de red se puedan comunicar entre ellos.</p>
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <hr>
+    <h2 id="apartado4">Pregunta 4 DHCP</h2>
+    <p>1.-hacemos un sudo apt-get install isc-dhcp-server, para descargarnos los paquetes del dhcp.</p> 
+    <p>2.-configuramos la tarjeta de red con el comando sudo nano /etc/default/isc-dhcp-server. Se desplegará la siguiente ventana donde en la línea INTERFACES debemos indicar cuál será la tarjeta de red encargada de distribuir y asignar las direcciones IP, en este caso indicaremos que será la tarjeta eth0.</p>
+    <p>3.- con el comando sudo nano /etc/dhcp/dhcpd.conf configuramos los valores del dhcp</p>
+    <p>4.- hacemos sudo systemctl restart isc-dhcp-serve. para reiniciar el servidor y que se ponga en funcionamiento.</p>
+        
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <hr>
+    <h2 id="apartado5">Pregunta 5 DHCP</h2>
+    <p></p>
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <hr>
+    <h2 id="apartado6">Pregunta 6 DHCP</h2>
+    <p>En linux:</p>
+        <p>-sudo systemctl status-isc/dhcp/server = sale si el servidor esta activo o apagado</p>
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <hr>
+    <h2 id="apartado7">Pregunta 7 DHCP</h2>
+    <img src="imagenes/5.png">
+    <p>Se encuentra en /etc/dcp/dcpd.conf. Las ip que se conseden son de 192.168.1.11 a la 192.168.1.29, el dominio se llama "uimagen.iaf". El tiempo de secion es 18000 segundos, si hay una direccion estatica la del servidor que es 193.146.96.3. La ip reservada es 192.168.1.2</p>
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <hr>
+    <h2 id="apartado8">Pregunta 8 DNS</h2>
+    <p>Es un servicio de Internet que traduce los nombres de los dominios en direcciones IP y viceversa</p>
+    <p>ventajas de un servicio dns es que facilitas las buquedas a traves de internet , aumento de la velocidad de respuesta, mejora en la estabilidad y seguridad.</p>
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <hr>
+    <h2 id="apartado9">Pregunta 9 DNS</h2>
+    <p>• Espacio de Nombres de Dominio=  relaciona direcciones IP con nombres de un
+        ordenador o de un conjunto de ellos.</p>
+        <p>• Dominio=  Es el nombre de esa direccion ip</p>
+        <p>• TLD= son dominios de primer nivel</p>
+        <p>• Zona= una zona es La parte de la base de datos de nombres de dominio alojada en el servidor DNS</p>
+        <p>• Transferencia de Zona=  es la operación mediante la cual un servidor primario transfiere el contenido del archivo de la base de datos de zona DNS a un servidor secundario.</p>
+        <p>• Delegación= El modelo jerárquico DNS permite traspasar, en la mayoría de los casos, a su propietario. Esta operacion se refiero delegacion</p>
+        <p>• Registro de Recurso= Indica dónde comienza una zona y el servidor de nombres que tendrá suautoridad. Únicamente puede haber un registro de tipo SOA por cada zona.</p>
+        <p>• Consulta=</p>
+        <p>• Resolución Inversa=</p>
+        
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <hr>
+    <h2 id="apartado10">Pregunta 10 DNS</h2>
+    <p>-Registro de recurso inicio de autoridad (RR SOA)</p>
+    <p>-Registro de recurso nombre de servidor (RR NS)</p>
+    <p>-Registro de recurso dirección (RR A)</p>
+    <p>-Registro de recurso nombre canónico (RR CNAM)</p>
+    <p>-Registro de recurso puntero (RR PTR) o registro inverso</p>
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <hr>
+    <h2 id="apartado11">Pregunta 11 DNS</h2>
+    <p></p>
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <hr>
+    <h2 id="apartado12">Pregunta 12 DNS</h2>
+    <p>En windows y linux el comando "nslookup [-opcion] [host] [servidor]",  nos vale tanto para linux como para windows.</p>
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <hr>
+    <h2 id="apartado13">Pregunta 13 DNS</h2>
+    <p>• Archivo named.conf: en etc</p>
+    <p>• Archivo named.conf.options: en etc</p>
+    <p>• Archivo named.conf.local: en etc/bind</p>
+    <p>• resolv.conf en etc</p>
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <h2 id="apartado14">Pregunta 1</h2>
+    <img src="imagenes/1.png">
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <h2 id="apartado15">Pregunta 2</h2>
+    <p>La ventaja de un servidor DHCP es que podrás crear subredes dentro de tu red y crearlo
+        todo tu mismo.
+        En él se configurarían todos los parámetros de las subredes creadas: Rango de Red,
+        Máscara, dirección de red...
+        Además informaría los datos e Ips de cada equipo junto con su registro de solicitudes.</p>
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <h2 id="apartado16">Pregunta 3</h2>
+    <p>Ámbito: Son los tipos de Red que puede haber dependiendo de su finalidad, ejemplo:
+        ámbito local, ámbito global...</p>
+        <p>• Intervalo de exclusión: Conjunto de ips que no se van a asignar a ningún equipo.</p>
+        <p>• Concesión: Cuando el server le da una ip a un equipo.</p>
+        <p>• Reserva: Cuando una ip está configurada para asignarle solo a un determinado equipo.</p>
+        <p>En mi caso se han concedido desde la 10.0.0.1 hasta la 10.0.0.12, las reservas serían la 10.0.0.10 y la 10.0.0.11</p>
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <h2 id="apartado17">Pregunta 4 </h2>
+    <img src="imagenes/2.png">
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <h2 id="apartado18">Pregunta 5</h2>
+    <p>/etc/dhcp/dhcpd.conf</p>
+        <p>• subnet: Dirección de subred</p>
+        <p>• netmask: Máscara</p>
+        <p>• option domain-name: Nombre del servidor</p>
+        <p>• range: rango de asignación de Ips</p>
+        <p>• option domain-name-servers: Ips que tendrán los servidores</p>
+        <p>• option routers: Ip del router de la subred</p>
+        <p>• default-lease-time: Tiempo por defecto para tener una IP</p>
+        <p>• max-lease-time: El máximo de tiempo que podemos poseer una IP.</p>
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <h2 id="apartado19">Pregunta 6</h2>
+    <p>Linux: /etc/dhcp/dhcpd.conf</p>
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <h2 id="apartado20">Pregunta 7</h2>
+    <p>El servicio DNS asigna direcciones IP con sus correspondientes nombres de dominio.</p>
+        <p>Proporcionará la pasibilidad de consultas de direcciones y nombres y el poder acceder a una
+        dirección sin necesidad de tener que sabérsela.</p>
+        <p>Necesitamos este servicio para la comodidad de los clientes que no tengan que saberse las Ips
+        de todos los sitios que quieren consultar.</p>
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <h2 id="apartado21">Pregunta 8</h2>
+    <p>• Dominio:Nombre que tiene el servidor relacionado con su IP.</p>
+        <p>• Zona:Es la configuración de un dominio dentro de un DNS.</p>
+        <p>• Resolución de nombres: Es cuando se tiene el nombre de una maquina y se consulta para
+        saber su IP.</p>
+        <p>• Resolución inversa: Lo mismo que antes pero teniendo la Ip y queriendo saber el nombre.</p>
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <h2 id="apartado22">Pregunta 9</h2>
+    <p>Un servidor DNS es primario cuando guarda la información sobre una zona determinada del
+        espacio de nombres de dominio en su propia base de datos.</p>
+        
+        <p>No es necesario tener un DNS propio cuando es un servidor esclavo ya que al arrancar pide
+        el fichero de dominios a otro servidor para que se puedan realizar las consultas.</p>
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <h2 id="apartado23">Pregunta 10</h2>
+    <img src="imagenes/3.png">
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+    <h2 id="apartado24">Pregunta 11</h2>
+    <p>• /etc/bind/db.juanma.org (Para ver que IP le pertenece a un nombre)</p>
+        <p>• /etc/bind/db.10 (Para ver que nombre pertenece a una IP)</p>
+    <p class="arriba"><a href="#arriba">[Arriba]</a></p>
+</body>
+</html>
